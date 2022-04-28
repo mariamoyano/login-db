@@ -1,0 +1,89 @@
+html {
+    background: url(https://cdn.pixabay.com/photo/2019/03/11/00/15/rainbow-4047523_960_720.jpg) no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: white;
+    font-size: 12px;
+    padding: 50px;
+}
+
+form {
+    width: 300px;
+    margin: 150px auto;
+    padding: 20px;
+    background: rgba(111, 159, 221, 0.7);
+    position: relative;
+    border-radius: 25px;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.boxes {
+    padding: 10px;
+}
+
+.boxes label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+    color: #ffffff;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.boxes input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 10px;
+    border-radius: 20px;
+    border: 0.5px solid rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 5px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    background: rgb(149, 190, 0);
+    color: white;
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+input[type=checkbox] {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.login {
+    padding: 0 10px 10px 10px;
+}
+
+.login:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.login span {
+    display: block;
+    float: left;
+    color: rgba(250, 0, 0, 0.9);
+    padding-top: 8px;
+}
