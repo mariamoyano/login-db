@@ -6,7 +6,7 @@ from config import PORT
 
 @app.route('/')
 def index():
-    render_template("login.html")
+    render_template("../login.html")
 
 @app.route("/signup/", methods=["GET", "POST"])
 def show_signup_form():
@@ -17,12 +17,16 @@ def show_signup_form():
         next = request.args.get('next', None)
         if next:
             return redirect(next)
-        return redirect(url_for('index'))
-    return render_template("signup.html")
+        return redirect(url_for('login'))
+    return render_template("../signup.html")
 
 @app.route('/success')
 def success():
-    return render_template('success.html')
+    return render_template('../success.html')
+
+@app.route('/remember')
+def success():
+    return render_template('../remember.html')
 
 if __name__ == "__main__":
     app.run(debug = True)
